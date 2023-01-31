@@ -5,7 +5,7 @@ function showTime() {
     const s = date.getSeconds();
     let amPm = h >= 12 ? 'PM' : 'AM';
     h = h % 12 || 12;
-    let time = h + ":" + m + ":" + s + '' + amPm;
+    let time = h + ":" + m + ":" + s + ' ' + amPm;
     document.getElementById("clock").innerHTML = time;
   }
   setInterval(showTime, 1000);
